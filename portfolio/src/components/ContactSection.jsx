@@ -95,39 +95,41 @@ const ContactSection = () => {
             </div>
 
             {/* Socials */}
-            <div className="pt-8">
-              <h4 className="font-medium mb-4">Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
-                <a
-                  href="https://www.linkedin.com/in/parasmpaterya06/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin />
-                </a>
-                <a
-                  href="https://x.com/Paras_Paterya06"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <X />
-                </a>
-                <a
-                  href="https://www.instagram.com/paras.paterya/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Instagram />
-                </a>
-                <a
-                  href="https://codolio.com/profile/paraspaterya06"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <CodeIcon />
-                </a>
-              </div>
-            </div>
+           <div className="pt-8 text-center">
+  <h4 className="font-medium mb-4 text-center">Connect With Me</h4>
+
+  <div className="flex space-x-4 justify-center">
+    <a
+      href="https://www.linkedin.com/in/parasmpaterya06/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Linkedin />
+    </a>
+    <a
+      href="https://x.com/Paras_Paterya06"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <X />
+    </a>
+    <a
+      href="https://www.instagram.com/paras.paterya/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Instagram />
+    </a>
+    <a
+      href="https://codolio.com/profile/paraspaterya06"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <CodeIcon />
+    </a>
+  </div>
+</div>
+
           </div>
 
           {/* Right Contact Form */}

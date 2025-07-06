@@ -45,12 +45,12 @@ const projects = [
 export const ProjectSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Featured <span className="text-primary"> Projects </span>
+          Featured <span className="text-primary">Projects</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
           Each project reflects my focus on clean code, performance, and intuitive user experience. I’ve leveraged modern, scalable tech stacks to build responsive frontend interfaces and robust backend systems.
         </p>
 
@@ -58,8 +58,9 @@ export const ProjectSection = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover text-left"
             >
+              {/* Image */}
               <div className="h-48 overflow-hidden">
                 <img
                   src={project.image}
@@ -68,7 +69,9 @@ export const ProjectSection = () => {
                 />
               </div>
 
+              {/* Content */}
               <div className="p-6">
+                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, idx) => (
                     <span
@@ -80,52 +83,50 @@ export const ProjectSection = () => {
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1">
+                {/* Title */}
+                <h3 className="text-xl font-semibold mb-2">
                   {project.title}
                 </h3>
 
+                {/* Description */}
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
 
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoURL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubURl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
+                {/* Links */}
+                <div className="flex gap-4">
+                  <a
+                    href={project.demoURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  >
+                    <ExternalLink size={20} />
+                  </a>
+                  <a
+                    href={project.githubURl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  >
+                    <Github size={20} />
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-
-        <div  className="text-center mt-12">
-
-            <a href=" https://github.com/paraspateriya06"  target="_blank"  className="cosmic-button w-fit flex items-center mx-auto gap-2"  >
-
-                Check My GitHub <ArrowRight size={16}/>
-            </a>
-
+        {/* GitHub CTA */}
+        <div className="mt-12 text-center">
+          <a
+            href="https://github.com/paraspateriya06"
+            target="_blank"
+            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+          >
+            Check My GitHub <ArrowRight size={16} />
+          </a>
         </div>
-
-
-
-
       </div>
     </section>
   );
