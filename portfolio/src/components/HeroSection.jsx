@@ -1,6 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import React from "react";
-import profile from "../../public/projects/profile.jpg";
+import profile from "../../public/projects/profile.png";
 
 export const HeroSection = () => {
   return (
